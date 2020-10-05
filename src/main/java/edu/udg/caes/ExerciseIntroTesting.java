@@ -12,7 +12,7 @@ public class ExerciseIntroTesting {
      */
     public static int findLast (int[] x, int y)
     {
-        for (int i=x.length-1; i > 0; i--)
+        for (int i=x.length-1; i >= 0; i--)
         {
             if (x[i] == y)
             {
@@ -31,7 +31,7 @@ public class ExerciseIntroTesting {
      */
     public static int lastZero (int[] x)
     {
-        for (int i = 0; i < x.length; i++)
+        for (int i=x.length-1; i >= 0; i--)
         {
             if (x[i] == 0)
             {
@@ -54,7 +54,7 @@ public class ExerciseIntroTesting {
 
         for (int i=0; i < x.length; i++)
         {
-            if (x[i] >= 0)
+            if (x[i] > 0)
             {
                 count++;
             }
@@ -77,7 +77,7 @@ public class ExerciseIntroTesting {
 
         for (int i = 0; i < x.length; i++)
         {
-            if (x[i]%2 == 1 || x[i] > 0)
+            if (x[i]%2 == 1 || x[i] >= 0)
             {
                 count++;
             }
